@@ -1,6 +1,12 @@
 # Food Expiry Management System
 
-A comprehensive web application for managing food inventory and tracking expiry dates to reduce food waste.
+A comprehensive full-stack web application for managing food inventory and tracking expiry dates to reduce food waste. Built with React, Node.js, MongoDB Atlas, and Firebase Authentication.
+
+## 🚀 Live Demo
+[Add your deployed app URL here]
+
+## 📱 Screenshots
+[Add screenshots of your application here]
 
 ## Features
 
@@ -62,7 +68,7 @@ A comprehensive web application for managing food inventory and tracking expiry 
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/YOUR_USERNAME/food-expiry-management.git
 cd food-expiry-management
 ```
 
@@ -82,13 +88,21 @@ npm install
 # Copy the example file
 cp server/.env.example server/.env
 
-# Edit with your actual values
-nano server/.env
+# Add your MongoDB Atlas and Firebase credentials to server/.env
 ```
 
-5. Configure Firebase
-- Update `src/config/firebase.js` with your Firebase config
-- Update `server/config/firebase-admin.js` with your service account
+5. Set up your environment variables in `server/.env`:
+```env
+# MongoDB Atlas
+MONGODB_URI=your_mongodb_atlas_connection_string
+
+# JWT Secret
+JWT_SECRET=your_jwt_secret_key
+
+# Firebase Admin SDK
+FIREBASE_PROJECT_ID=your_firebase_project_id
+# ... other Firebase config
+```
 
 6. Start the development servers
 ```bash
@@ -142,6 +156,15 @@ food-expiry-management/
 └── README.md
 ```
 
+## 🔧 Technologies Used
+
+- **Frontend**: React.js, Tailwind CSS, Framer Motion, React Router
+- **Backend**: Node.js, Express.js, MongoDB with Mongoose
+- **Database**: MongoDB Atlas
+- **Authentication**: Firebase Auth with JWT
+- **Deployment**: [Add your deployment platform]
+- **Development**: Vite, ESLint, Nodemon
+
 ## Security Features
 
 - JWT token authentication
@@ -151,14 +174,14 @@ food-expiry-management/
 - Secure cookie handling
 - Firebase security rules
 
-## Contributing
+## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
+## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+[Your Name] - [Your GitHub Profile]
